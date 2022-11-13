@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=3 uid="uid://1mg224qnmaml"]
+
+[ext_resource type="FontFile" uid="uid://bg2kfwvflnsot" path="res://fonts/RiseStarHandRegular.otf" id="1_1dmmp"]
+[ext_resource type="Texture2D" uid="uid://jjg3wp3ede8o" path="res://icon.png" id="2_2ehti"]
+[ext_resource type="FontFile" uid="uid://cj8tmrwnqm61h" path="res://fonts/DSEG14Classic-Regular.ttf" id="2_vrbk5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kd1ft"]
+font = ExtResource("1_1dmmp")
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22u01"]
+bg_color = Color(0, 0, 0, 0.698039)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5e23o"]
+font = ExtResource("2_vrbk5")
+font_color = Color(0.243137, 0.243137, 0.243137, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_aggvx"]
+font = ExtResource("2_vrbk5")
+font_color = Color(1, 0.8, 0, 1)
+
+[node name="control_player" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 13.0
+offset_top = 103.0
+offset_right = 111.0
+offset_bottom = 123.0
+color = Color(0.772549, 0.772549, 0.772549, 1)
+
+[node name="label_name" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 105.0
+offset_right = 113.0
+offset_bottom = 127.0
+text = "null"
+label_settings = SubResource("LabelSettings_kd1ft")
+horizontal_alignment = 1
+
+[node name="img_avatar" type="TextureRect" parent="."]
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 105.0
+offset_bottom = 100.0
+texture = ExtResource("2_2ehti")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="panel_score_background" type="Panel" parent="."]
+offset_left = 13.0
+offset_top = 124.0
+offset_right = 111.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_22u01")
+
+[node name="label_score_background" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 129.0
+offset_right = 96.0
+offset_bottom = 155.0
+text = "00000"
+label_settings = SubResource("LabelSettings_5e23o")
+horizontal_alignment = 2
+
+[node name="label_score" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 129.0
+offset_right = 96.0
+offset_bottom = 155.0
+text = "0"
+label_settings = SubResource("LabelSettings_aggvx")
+horizontal_alignment = 2

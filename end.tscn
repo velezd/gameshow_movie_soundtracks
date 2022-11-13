@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi04s1dkfrb7u"]
+
+[ext_resource type="Script" path="res://end.gd" id="1_gng2h"]
+[ext_resource type="Texture2D" uid="uid://20c1k1kmxgls" path="res://textures/game_background_end.png" id="2_bl5qk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -300.0
+offset_right = 512.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gng2h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -766.0
+offset_top = -325.0
+offset_right = 769.0
+offset_bottom = 332.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bl5qk")
+ignore_texture_size = true
+stretch_mode = 4
+metadata/_edit_layout_mode = 1

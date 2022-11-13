@@ -1,0 +1,282 @@
+[gd_scene load_steps=6 format=3 uid="uid://djqvw0mncymno"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_nmk36"]
+[ext_resource type="Texture2D" uid="uid://dx03sw5wl1wtu" path="res://textures/menu_background.png" id="2_le40p"]
+[ext_resource type="Script" path="res://control_avatar.gd" id="3_3n1yg"]
+[ext_resource type="Texture2D" uid="uid://dsg0lj7atpldp" path="res://textures/avatars/1.png" id="4_w7dtt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8rxmy"]
+bg_color = Color(0, 0, 0, 0.196078)
+
+[node name="main" type="Node"]
+
+[node name="menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -300.0
+offset_right = 514.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nmk36")
+
+[node name="TextureRect" type="TextureRect" parent="menu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -584.0
+offset_top = -324.0
+offset_right = 583.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_le40p")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_layout_mode = 1
+
+[node name="control_connect" type="Control" parent="menu"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 1.0
+offset_right = 1026.0
+offset_bottom = 599.0
+
+[node name="Panel" type="Panel" parent="menu/control_connect"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 400.0
+offset_right = 535.0
+offset_bottom = 565.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8rxmy")
+
+[node name="btn_connect" type="Button" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 414.0
+offset_top = -80.0
+offset_right = 486.0
+offset_bottom = -49.0
+grow_vertical = 0
+text = "Connect"
+metadata/_edit_layout_mode = 1
+
+[node name="line_edit_ip" type="LineEdit" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 136.0
+offset_top = -92.0
+offset_right = 344.0
+offset_bottom = -61.0
+grow_vertical = 0
+theme_override_colors/font_placeholder_color = Color(1, 0, 0, 1)
+text = "localhost"
+metadata/_edit_layout_mode = 1
+
+[node name="label_ip" type="Label" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 58.0
+offset_top = -91.0
+offset_right = 98.0
+offset_bottom = -65.0
+grow_vertical = 0
+text = "IP"
+metadata/_edit_layout_mode = 1
+
+[node name="label_join" type="Label" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 58.0
+offset_top = -174.0
+offset_right = 203.0
+offset_bottom = -148.0
+grow_vertical = 0
+text = "Join server"
+metadata/_edit_layout_mode = 1
+
+[node name="label_name" type="Label" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 58.0
+offset_top = -131.0
+offset_right = 105.0
+offset_bottom = -105.0
+grow_vertical = 0
+text = "Name"
+metadata/_edit_layout_mode = 1
+
+[node name="line_edit_name" type="LineEdit" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 136.0
+offset_top = -131.0
+offset_right = 344.0
+offset_bottom = -100.0
+grow_vertical = 0
+theme_override_colors/font_placeholder_color = Color(1, 0, 0, 1)
+metadata/_edit_layout_mode = 1
+
+[node name="btn_server" type="Button" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -28.0
+offset_top = -36.0
+offset_right = -8.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "π"
+flat = true
+metadata/_edit_layout_mode = 1
+
+[node name="control_avatar" type="Control" parent="menu/control_connect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 368.0
+offset_top = -202.0
+offset_right = 539.0
+offset_bottom = -89.0
+grow_vertical = 0
+script = ExtResource("3_3n1yg")
+metadata/_edit_layout_mode = 1
+
+[node name="texture_avatar" type="TextureRect" parent="menu/control_connect/control_avatar"]
+layout_mode = 0
+offset_left = 27.0
+offset_right = 140.0
+offset_bottom = 113.0
+texture = ExtResource("4_w7dtt")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="btn_avatar_right" type="Button" parent="menu/control_connect/control_avatar"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 43.0
+offset_right = 158.0
+offset_bottom = 74.0
+text = ">"
+
+[node name="btn_avatar_left" type="Button" parent="menu/control_connect/control_avatar"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 43.0
+offset_right = 26.0
+offset_bottom = 74.0
+text = "<"
+
+[node name="control_lobby" type="Control" parent="menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 599.0
+
+[node name="list_players" type="ItemList" parent="menu/control_lobby"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 36.0
+offset_top = -170.5
+offset_right = 312.0
+offset_bottom = 108.5
+grow_vertical = 2
+metadata/_edit_layout_mode = 1
+
+[node name="label_players" type="Label" parent="menu/control_lobby"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 147.0
+offset_top = -206.5
+offset_right = 204.0
+offset_bottom = -180.5
+grow_vertical = 2
+text = "Players"
+metadata/_edit_layout_mode = 1
+
+[node name="control_server" type="Control" parent="menu"]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_right = 1026.0
+offset_bottom = 600.0
+
+[node name="Panel" type="Panel" parent="menu/control_server"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 425.0
+offset_right = 312.0
+offset_bottom = 556.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8rxmy")
+
+[node name="label_server_ip" type="Label" parent="menu/control_server"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 435.0
+offset_right = 119.0
+offset_bottom = 461.0
+text = "Server IP"
+metadata/_edit_layout_mode = 1
+
+[node name="label_server_ip_addr" type="Label" parent="menu/control_server"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 461.0
+offset_right = 173.0
+offset_bottom = 487.0
+text = "000.000.000.000"
+metadata/_edit_layout_mode = 1
+
+[node name="btn_start_game" type="Button" parent="menu/control_server"]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 496.0
+offset_right = 487.0
+offset_bottom = 556.0
+text = "Start game"
+metadata/_edit_layout_mode = 1
+
+[node name="statusbar" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.729412, 0.729412, 0.729412, 1)
+horizontal_alignment = 1
+metadata/_edit_layout_mode = 1

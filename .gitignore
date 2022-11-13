@@ -1,0 +1,5 @@
+export/
+gfx_src/
+textures/posters/final/
+# Godot 4+ specific ignores
+.godot/

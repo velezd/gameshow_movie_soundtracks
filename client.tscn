@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://xsqsstxfye4g"]
+
+[ext_resource type="Script" path="res://client.gd" id="1_4xvp6"]
+[ext_resource type="Texture2D" uid="uid://b4g6k132caaig" path="res://textures/game_background_off.png" id="2_002r2"]
+[ext_resource type="Texture2D" uid="uid://cjusy8u6kmu33" path="res://textures/icons/sound_off.png" id="3_q0s1t"]
+[ext_resource type="Texture2D" uid="uid://dk8ynrpmju48p" path="res://textures/posters/test_1.png" id="4_4bj4i"]
+
+[node name="client" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -300.0
+offset_right = 512.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4xvp6")
+
+[node name="background" type="TextureRect" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -761.0
+offset_top = -322.0
+offset_right = 1948.0
+offset_bottom = 865.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("2_002r2")
+stretch_mode = 4
+metadata/_edit_layout_mode = 1
+
+[node name="btn_iknow" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -68.0
+offset_right = 45.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "I know!"
+metadata/_edit_layout_mode = 1
+
+[node name="btn_mute" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_top = 17.0
+offset_right = -16.0
+offset_bottom = 57.0
+grow_horizontal = 0
+icon = ExtResource("3_q0s1t")
+expand_icon = true
+metadata/_edit_layout_mode = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="poster" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -165.0
+offset_right = 72.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_4bj4i")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_layout_mode = 1
