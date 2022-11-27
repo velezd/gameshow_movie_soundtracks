@@ -14,7 +14,7 @@ func _ready():
             winners = [player]
 
     # Show winners
-    var offset = 500 - len(winners) * 50
+    var offset = 520 - len(winners) * 48
     var player_scene = preload("res://player.tscn")
     for id in winners:
         var player = Game.PLAYERS_LIST[id]
