@@ -46,12 +46,18 @@ func _on_correct_pressed():
 func _on_wrong_pressed():
     answer_is(false)
 
+func print_state():
+    print(Game.MOVIES[Game.CURRENT_MOVIE]['name'])
+    for player in Game.PLAYERS_LIST.values():
+        print(player['name'] + ' - ' + str(player['score']))
+
 func answer_is(correct):
     if correct:
         Game.client_show_movie()
         Game.PLAYERS_LIST[self.GUESSING_PLAYER]['score'] += 100
         Game.client_update_players()
         update_player_list()
+        print_state()
     else:
         Game.resume_guessing()
 
