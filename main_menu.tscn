@@ -259,12 +259,28 @@ metadata/_edit_layout_mode = 1
 
 [node name="btn_start_game" type="Button" parent="menu/control_server"]
 layout_mode = 0
-offset_left = 340.0
-offset_top = 496.0
-offset_right = 487.0
-offset_bottom = 556.0
+offset_left = 855.0
+offset_top = 494.0
+offset_right = 1002.0
+offset_bottom = 554.0
 text = "Start game"
 metadata/_edit_layout_mode = 1
+
+[node name="label_pass" type="Label" parent="menu/control_server"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 510.0
+offset_right = 499.0
+offset_bottom = 536.0
+text = "Password"
+
+[node name="line_edit_pass" type="LineEdit" parent="menu/control_server"]
+layout_mode = 0
+offset_left = 532.0
+offset_top = 508.0
+offset_right = 715.0
+offset_bottom = 539.0
+secret = true
 
 [node name="statusbar" type="Label" parent="."]
 anchors_preset = 7

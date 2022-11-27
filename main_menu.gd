@@ -44,6 +44,12 @@ func connected_player(id: int):
     $/root/main/statusbar.text = 'Player connected ' + str(id)
 
 func _on_start_game_pressed():
+    # Check password
+    var password = $control_server/line_edit_pass
+    if password.text.sha256_text() != '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8':
+        $/root/main/statusbar.text = 'Wrong password'
+        return
+
     $/root/main/statusbar.text = ''
     rpc('change_scene', 'res://client.tscn')
     self.change_scene('res://host.tscn')
