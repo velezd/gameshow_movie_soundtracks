@@ -17,7 +17,15 @@ func _ready():
     $btn_mute.connect('pressed', _on_mute_pressed)
     
     var offset = 0
+    # If there is more than 10 players start drawing them higher
+    var offset_top = 500 if len(Game.PLAYERS_LIST) < 11 else 380
+    var player_count = 0
     for id in Game.PLAYERS_LIST:
+        # After 10th player reset left offest and move top offset down
+        if player_count == 10:
+            offset = 0
+            offset_top = 500
+
         var player = Game.PLAYERS_LIST[id]
         var player_node = player_scene.instantiate()
         player_node.set_name('plr_' + str(id))
@@ -25,9 +33,10 @@ func _ready():
         player_node.get_node('label_name').text = player['name']
         player_node.get_node('label_score').text = str(player['score'])
         player_node.offset_left = offset
-        player_node.offset_top = 440
-        offset += 100
+        player_node.offset_top = offset_top
+        offset += 105
         self.add_child(player_node)
+        player_count += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

@@ -33,17 +33,19 @@ grow_vertical = 2
 script = ExtResource("1_438d8")
 
 [node name="label_details_text" type="Label" parent="."]
+layout_mode = 0
 offset_left = 578.0
 offset_top = 143.0
-offset_right = 987.0
-offset_bottom = 560.0
+offset_right = 1103.0
+offset_bottom = 515.0
 text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas sollicitudin. Pellentesque pretium lectus id turpis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ornare wisi eu metus. Mauris dictum facilisis augue. Etiam dictum tincidunt diam."
 autowrap_mode = 2
 
 [node name="label_name" type="Label" parent="."]
+layout_mode = 0
 offset_left = 578.0
 offset_top = 23.0
-offset_right = 986.0
+offset_right = 1106.0
 offset_bottom = 143.0
 text = "Movie name
 Nazev filmu"
@@ -51,6 +53,7 @@ label_settings = SubResource("LabelSettings_rr127")
 horizontal_alignment = 1
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
 offset_left = 332.0
 offset_top = 357.0
 offset_right = 536.0
@@ -58,6 +61,7 @@ offset_bottom = 368.0
 value = 50.0
 
 [node name="img_movie" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 332.0
 offset_top = 23.0
 offset_right = 536.0
@@ -67,44 +71,50 @@ ignore_texture_size = true
 stretch_mode = 4
 
 [node name="btn_correct" type="Button" parent="."]
-offset_left = 44.0
-offset_top = 23.0
-offset_right = 296.0
-offset_bottom = 80.0
+layout_mode = 0
+offset_left = 588.0
+offset_top = 562.0
+offset_right = 728.0
+offset_bottom = 619.0
 disabled = true
 text = "Correct"
 
 [node name="btn_wrong" type="Button" parent="."]
-offset_left = 44.0
-offset_top = 106.0
-offset_right = 296.0
-offset_bottom = 163.0
+layout_mode = 0
+offset_left = 783.0
+offset_top = 562.0
+offset_right = 923.0
+offset_bottom = 619.0
 disabled = true
 text = "Wrong"
 
 [node name="btn_next" type="Button" parent="."]
-offset_left = 44.0
-offset_top = 186.0
-offset_right = 296.0
-offset_bottom = 243.0
+layout_mode = 0
+offset_left = 978.0
+offset_top = 562.0
+offset_right = 1118.0
+offset_bottom = 619.0
 text = "Next"
 
 [node name="btn_pause" type="Button" parent="."]
+layout_mode = 0
 offset_left = 332.0
-offset_top = 438.0
+offset_top = 458.0
 offset_right = 536.0
-offset_bottom = 495.0
+offset_bottom = 515.0
 disabled = true
 text = "Pause"
 
 [node name="btn_show" type="Button" parent="."]
+layout_mode = 0
 offset_left = 332.0
-offset_top = 518.0
+offset_top = 562.0
 offset_right = 536.0
-offset_bottom = 575.0
+offset_bottom = 619.0
 text = "Show movie"
 
 [node name="btn_play" type="Button" parent="."]
+layout_mode = 0
 offset_left = 332.0
 offset_top = 357.0
 offset_right = 536.0
@@ -114,15 +124,17 @@ text = "Play"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="list_players" type="ItemList" parent="."]
+layout_mode = 0
 offset_left = 44.0
-offset_top = 271.0
+offset_top = 23.0
 offset_right = 296.0
-offset_bottom = 569.0
+offset_bottom = 621.0
 theme_override_styles/selected = SubResource("StyleBox_3q623")
 
 [node name="Panel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 25.0
-offset_top = 266.0
+offset_top = 18.0
 offset_right = 304.0
-offset_bottom = 567.0
+offset_bottom = 630.0
 theme_override_styles/panel = SubResource("StyleBox_vjuqx")

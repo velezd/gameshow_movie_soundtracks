@@ -13,7 +13,13 @@ var PLAYERS_LIST_test = {
     107: {'name': 'Trotlobot', 'score': 700, 'avatar': 6},
     108: {'name': 'Lucka', 'score': 200, 'avatar': 7},
     109: {'name': 'Jan', 'score': 4500, 'avatar': 8},
-    110: {'name': 'FooBar', 'score': 500, 'avatar': 9}
+    110: {'name': 'FooBar', 'score': 500, 'avatar': 9},
+    111: {'name': 'John', 'score': 700, 'avatar': 6},
+    112: {'name': 'Rodney', 'score': 200, 'avatar': 7},
+    113: {'name': 'Steve', 'score': 4500, 'avatar': 8},
+    114: {'name': 'George', 'score': 500, 'avatar': 9},
+    115: {'name': 'CJ', 'score': 4500, 'avatar': 8},
+    116: {'name': 'example.com', 'score': 500, 'avatar': 9}
 }
 
 var AVATARS = [preload("res://textures/avatars/1.png"),
