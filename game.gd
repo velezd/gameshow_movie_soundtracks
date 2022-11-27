@@ -32,7 +32,16 @@ var AVATARS = [preload("res://textures/avatars/1.png"),
                preload("res://textures/avatars/8.png"),
                preload("res://textures/avatars/9.png"),
                preload("res://textures/avatars/10.png"),
-               preload("res://textures/avatars/11.png")]
+               preload("res://textures/avatars/11.png"),
+               preload("res://textures/avatars/12.png"),
+               preload("res://textures/avatars/13.png"),
+               preload("res://textures/avatars/14.png"),
+               preload("res://textures/avatars/15.png"),
+               preload("res://textures/avatars/16.png"),
+               preload("res://textures/avatars/17.png"),
+               preload("res://textures/avatars/18.png"),
+               preload("res://textures/avatars/19.png"),
+               preload("res://textures/avatars/20.png")]
 
 var MOVIES = [
     {'name': 'Test Movie 1',

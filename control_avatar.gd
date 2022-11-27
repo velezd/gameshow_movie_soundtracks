@@ -21,7 +21,7 @@ func next_avatar(reverse=false):
         if self.option == 0: return
         self.option -= 1
     else:
-        if self.option == 10: return
+        if self.option == 19: return
         self.option += 1
     
     $texture_avatar.texture = Game.AVATARS[self.option]
