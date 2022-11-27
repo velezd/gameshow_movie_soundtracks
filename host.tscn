@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d36j4pc5g5ick"]
+[gd_scene load_steps=10 format=3 uid="uid://d36j4pc5g5ick"]
 
 [ext_resource type="Script" path="res://host.gd" id="1_438d8"]
 
@@ -6,6 +6,18 @@
 font_size = 28
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_h6y53"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_461ob"]
+bg_color = Color(0, 0.580392, 0.282353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3yy34"]
+bg_color = Color(0, 0.137255, 0.00392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfmk7"]
+bg_color = Color(0.745098, 0.113725, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0os1l"]
+bg_color = Color(0.235294, 0.0352941, 0, 1)
 
 [sub_resource type="StyleBox" id="StyleBox_3q623"]
 resource_local_to_scene = false
@@ -76,6 +88,8 @@ offset_left = 588.0
 offset_top = 562.0
 offset_right = 728.0
 offset_bottom = 619.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_461ob")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_3yy34")
 disabled = true
 text = "Correct"
 
@@ -85,6 +99,8 @@ offset_left = 783.0
 offset_top = 562.0
 offset_right = 923.0
 offset_bottom = 619.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bfmk7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0os1l")
 disabled = true
 text = "Wrong"
 
