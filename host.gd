@@ -10,6 +10,7 @@ func _ready():
     $btn_next.connect('pressed', _on_next_pressed)
     $btn_correct.connect('pressed', _on_correct_pressed)
     $btn_wrong.connect('pressed', _on_wrong_pressed)
+    $btn_show.connect('pressed', _on_show_pressed)
     load_movie(Game.CURRENT_MOVIE)
     update_player_list(104)
 
@@ -45,6 +46,9 @@ func _on_correct_pressed():
 
 func _on_wrong_pressed():
     answer_is(false)
+
+func _on_show_pressed():
+    Game.client_show_movie()
 
 func print_state():
     print(Game.MOVIES[Game.CURRENT_MOVIE]['name'])

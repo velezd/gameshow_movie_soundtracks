@@ -63,6 +63,7 @@ func update_scores():
 func show_movie():
     $background.texture = self.BACKGROUNDS[1]
     $poster.visible = true
+    self.stop_guessing()
 
 func hide_movie():
     $background.texture = self.BACKGROUNDS[0]
